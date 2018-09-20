@@ -1,0 +1,461 @@
+@blue: #162836;
+@lightGrey: #F1F3F2;
+@letterSpaceTitle: 0.2em;
+@smallText: 0.8em;
+@white: #FFFFFF;
+@black: #000000;
+@Padding40: 40px;
+
+#boxshadow{
+	.shadow () {
+	-webkit-box-shadow: 10px 10px 36px -6px rgba(0,0,0,1);
+	-moz-box-shadow: 10px 10px 36px -6px rgba(0,0,0,1);
+	box-shadow: 10px 10px 36px -6px rgba(0,0,0,1);
+	}
+}
+
+#title {
+    .titlestyling () {
+	padding-top: @Padding40;
+	margin: 10px;
+	text-align: center;
+	font-size: 1.2em;
+	letter-spacing: @letterSpaceTitle;
+    }
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#headerImageWrapper{
+position: relative;
+height: 100vh;
+overflow: hidden;
+}
+#headerImageWrapper{
+	background-image:url("../images/startimage.jpg");
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	}
+
+/*#headerImage{
+position: absolute;
+height: 100vh;
+width: auto;
+left: 50%;
+top: 50%;
+transform: translateX(-50%) translateY(-50%);
+}*/
+/** navbar **/
+
+.topnav {
+	position: absolute;
+	background-color: black;
+	opacity: 0.5;
+	height: 70px;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-around;
+  }
+  
+  .topnav a {
+	margin-top:10px;
+	letter-spacing:@letterSpaceTitle;
+	font-size: 0.6em;
+	display: block;
+	color:@white;
+	text-align: center;
+	padding: 15px 11px 0px 11px;
+	text-decoration: none;
+  }
+  #myTopnav > a:nth-child(3) > img{
+	width: 70px;
+	height: 70px;
+	display: block;
+	margin-top:-13px;
+	color:@white;
+	text-align: center;
+  }
+  
+  /*.active {
+	background-color: rgb(224, 222, 221);
+	color: white;
+  }*/
+  
+  .topnav .icon {
+	display: none;
+  }
+  
+
+
+/*
+ul {
+	width: 100%;
+	position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+	border: solid blue;
+	
+    float: left;
+}
+
+li a {
+	letter-spacing: 0.2em;
+    display: inline-block;
+	color: white;
+	width: 100px;	
+	border: solid red;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}*/
+
+	/*#logo{
+	background-image: url("images/logo.png");
+	border: solid yellow;
+	width: 70px;
+	height: 70px;
+	margin-top: 10px;
+	//position: absolute;
+	top:0;
+	
+	}*/
+/*img id="logo" src="images/logo.png" alt="logo"*/
+	/*#about{
+		position: absolute;
+		left: 5%;
+	}
+	#calendar{
+		position: absolute;
+		left: 17%;
+	}
+	#logo{
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	margin-top: 10px;
+	top:0;
+	left:40%;
+	}
+	#menu{
+		position: absolute;
+		right: 27%;
+	}
+	#contact{
+		position: absolute;
+		right: 5%;
+	}*/
+	
+#arrowImage{
+width: 100px;
+height: 100px;
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%) translateY(-50%);
+margin-bottom: -50px;
+}
+
+
+/*part two on page om lennart och bror */
+
+#partTwo{
+	height: auto;
+}
+
+h1{
+	#title  > .titlestyling();
+}
+
+#aboutLB{
+	display: flex;
+	justify-content: space-around;
+	height: calc(45vh - 10px);
+	overflow: auto;
+
+}
+#aboutText{
+	padding: 20px;
+}
+/**** happening at L&B part****/
+
+#happeningWrapper{
+	background-color: @blue;
+	height: auto;
+	/*height: calc(55vh - 10px);*/
+	color: @white;
+	position: relative;
+}
+#arrowWrapper{
+margin-top:100px;
+border: solid @blue;
+}
+
+	#arrowImage2{
+		width: 70px;
+		height: 70px;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+	}
+	
+
+#happeningWrapper h2{
+	padding-bottom: 38px;
+	#title  > .titlestyling();
+}
+
+#dateWrapper{
+	display: flex;
+	justify-content: center;
+	flex-flow: wrap;
+	height: auto;
+}
+#date{
+	width: 100px;
+	height: 120px;
+    text-align: center;
+}
+
+#info{
+	width: 400px;
+	height: 150px;
+	display: flex;
+	justify-content: space-around;
+	padding-right: @Padding40;
+    padding-left: @Padding40;
+}
+
+#text{
+	width: 200px;
+	height: 120px;
+	text-align: left;
+	padding-left: 10px;
+	font-size: 0.8em;
+    letter-spacing: 0.08em;
+}
+
+#text h3{
+	margin-top: 0px;
+	margin-bottom: -2px;
+	letter-spacing: @letterSpaceTitle;
+}
+#date p{
+	margin-top: 0px;
+	border: solid 3px @white;
+    padding: 30px 20px;
+	font-size: 0.8em;
+}
+
+/***** Food menu part *****/
+
+h4{
+	#title  > .titlestyling();
+}
+#menuWrapper{ 
+ height: auto;
+}
+#menuInfoWrapper{
+	padding:0px 60px 60px 60px;
+	height: 60%;
+    background-color:@lightGrey; 
+}
+#pureWrapperCenter{
+	display: flex;
+	justify-content: center;
+}
+#menuInfoWrapper p{
+	width: 500px;
+}
+#foodimg{
+    width: 500px;
+    height: 250px;
+}
+#menuButton{
+	margin-top:50px;
+	width: 200px;
+	background-color: @white;
+	border:solid 1px @black;
+	padding: 7px 10px 7px 10px;
+}
+
+/*** order food part***/
+
+#orderWrapper{
+display: flex;
+height: 300px;
+justify-content: space-around;
+flex-direction: row-reverse;
+}
+#drawingimg{
+   padding: 20px;
+}
+ h5{
+	letter-spacing: @letterSpaceTitle;
+ }
+ #innerOrderWrapper{
+	 padding: 20px;
+ }
+ #rightWrapper h5{
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+#rightWrapper p{
+	font-size: @smallText;
+	margin-top: 0px;
+ }
+ #callButton{
+	 background-color:@white;
+	 border:solid 1px @black;
+	 padding: 7px 10px 7px 10px;
+ }
+ #callLink{
+	text-decoration: none;
+	color: @black;
+ }
+ /******* image part****/
+
+/*
+ #meatImgWrapper{
+	width: 100%;
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+ }
+
+ #meat{
+	width:100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 100%;
+	height: auto;
+ }
+ */
+ /****** FOOTER ********/
+ #footerWrapper{
+	background-color: @blue;
+	height: auto;
+	color:@white;
+}
+#leftWrapper{
+height: auto;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin: 0px;
+}
+
+#rightWrapper{
+margin-top: @Padding40;
+background-color:@white;
+color: @black;
+width: 100%;
+
+}
+h6{
+text-align: left;
+margin-bottom: 20px;
+font-size: 1.2em;
+letter-spacing: @letterSpaceTitle;
+}
+#text1{
+	width: 150px;
+	height: auto;
+	text-align: left;
+	font-size: 0.8em;
+	letter-spacing: 0.08em;
+}
+#text1 p, #text2 p{
+	margin-bottom: 20px;
+}
+#text2{
+	width: 200px;
+	height: auto;
+	text-align: left;
+	font-size: 0.8em;
+	letter-spacing: 0.08em;
+}
+#linkWrapper{
+	padding: 10px 5px 10px 5px;
+	border: 2px solid @white;
+	text-align: center;
+	
+}
+#emailLink{
+	text-decoration: none;
+	color: @white;
+}
+
+#address{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-top:@Padding40;
+	padding-bottom: @Padding40;
+}
+#address p{
+	display: block;
+	margin: 10px;
+	text-align: left;
+	font-size: 0.8em;
+	font-weight: 800;
+	letter-spacing: @letterSpaceTitle;
+}
+#socialmedia{
+	padding: @Padding40;
+	display: flex;
+	justify-content: space-around;
+	border-top: solid 1px grey;
+}
+#facebook, #instagram{
+	border:2px solid @black;
+	padding: 10px 10px 10px 10px;
+	background-color: @white;
+	font-weight: 800;
+}
+#facebook:hover, #instagram:hover, #callButton:hover, #callLink:hover  {
+background-color: @blue;
+color: @white;
+}
+
+@media screen and (min-width: 711px) {
+	  .topnav a {
+		font-size: 0.8em;
+		font-weight: 700;
+	  }
+	.topnav a:hover {
+		background-color: #ddd;
+		color: black;
+	  }
+	  
+
+}
+
+@media screen and (min-width: 900px) {}
+
+
+/*
+
+@media screen and (min-width: 900px) {}
+@media screen and (min-width: 1024px) {}
+*/
