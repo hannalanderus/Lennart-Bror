@@ -83,13 +83,19 @@ h1 {
   letter-spacing: 0.2em;
 }
 #aboutLB {
+  height: 100vh;
   display: flex;
-  justify-content: space-around;
-  height: calc(45vh - 10px);
+  justify-content: center;
+  flex-wrap: wrap;
+  /*height: calc(45vh - 10px); test this in tablet
+	display: flex;
+	justify-content: space-around*/
   overflow: auto;
 }
 #aboutText {
-  padding: 20px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 /**** happening at L&B part****/
 #happeningWrapper {
