@@ -15,7 +15,7 @@
 }
 
 #title {
-    .titlestyling () {
+    .titlestyling (){
 	padding-top: @Padding40;
 	margin: 10px;
 	text-align: center;
@@ -23,6 +23,19 @@
 	letter-spacing: @letterSpaceTitle;
     }
 }
+
+#arrowStyling{
+	.arrowImageStyling (){
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	}
+}
+
+/******************************  START  ********************************/
 
 body, html {
     height: 100%;
@@ -44,16 +57,6 @@ overflow: hidden;
 	display: flex;
 	justify-content: center;
 	}
-
-/*#headerImage{
-position: absolute;
-height: 100vh;
-width: auto;
-left: 50%;
-top: 50%;
-transform: translateX(-50%) translateY(-50%);
-}*/
-/** navbar **/
 
 .topnav {
 	position: absolute;
@@ -93,19 +96,15 @@ transform: translateX(-50%) translateY(-50%);
   .topnav .icon {
 	display: none;
   }
+
 #arrowImage{
-width: 100px;
-height: 100px;
-position: absolute;
-bottom: 0;
-left: 50%;
-transform: translateX(-50%) translateY(-50%);
-margin-bottom: -50px;
+#arrowStyling  > .arrowImageStyling();
+margin-bottom: -30px;
 }
 
 
 
-/*part two on page om lennart och bror */
+/******* part two on page om lennart och bror *******/
 
 #partTwo{
 	height: auto;
@@ -120,6 +119,7 @@ h1{
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	position: relative;
 	/*height: calc(45vh - 10px); test this in tablet
 	display: flex;
 	justify-content: space-around*/
@@ -130,28 +130,28 @@ h1{
 	padding-left: 20px;
 	padding-right: 20px;
 }
+
+#arrowImageAbout{
+	#arrowStyling  > .arrowImageStyling();
+}
+
 /**** happening at L&B part****/
 
 #happeningWrapper{
 	background-color: @blue;
-	height: auto;
+	height: 100vh;
 	/*height: calc(55vh - 10px);*/
 	color: @white;
 	position: relative;
 }
 #arrowWrapper{
-margin-top:100px;
-border: solid @blue;
+	margin-top:100px;
+	border: solid @blue;
 }
 
-	#arrowImage2{
-		width: 70px;
-		height: 70px;
-		position: absolute;
-		bottom: 0;
-		left: 50%;
-		transform: translateX(-50%) translateY(-50%);
-	}
+#arrowImage2{
+	#arrowStyling  > .arrowImageStyling();
+}
 	
 
 #happeningWrapper h2{
@@ -236,10 +236,10 @@ h4{
 /*** order food part***/
 
 #orderWrapper{
-display: flex;
-height: 300px;
-justify-content: space-around;
-flex-direction: row-reverse;
+	display: flex;
+	height: 300px;
+	justify-content: space-around;
+	flex-direction: row-reverse;
 }
 #drawingimg{
    padding: 20px;
@@ -277,25 +277,24 @@ flex-direction: row-reverse;
 	color:@white;
 }
 #leftWrapper{
-height: auto;
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
-margin: 0px;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 0px;
 }
 
 #rightWrapper{
-margin-top: @Padding40;
-background-color:@white;
-color: @black;
-width: 100%;
-
+	margin-top: @Padding40;
+	background-color:@white;
+	color: @black;
+	width: 100%;
 }
 h6{
-text-align: left;
-margin-bottom: 20px;
-font-size: 1.2em;
-letter-spacing: @letterSpaceTitle;
+	text-align: left;
+	margin-bottom: 20px;
+	font-size: 1.2em;
+	letter-spacing: @letterSpaceTitle;
 }
 #text1{
 	width: 150px;
@@ -356,7 +355,7 @@ letter-spacing: @letterSpaceTitle;
 background-color: @blue;
 color: @white;
 }
-#arrowImageBack{
+#arrowImageBackToTop{
 width: 70px;
 height: 70px;
 }
@@ -370,6 +369,14 @@ justify-content: center;
 }
 
 @media screen and (min-width: 711px) {
+#aboutLB{
+	display: flex;
+	justify-content: space-around;
+	overflow: auto;
+}
+#aboutText{
+	width: 40%;
+}
 	  .topnav a {
 		font-size: 0.8em;
 		font-weight: 700;

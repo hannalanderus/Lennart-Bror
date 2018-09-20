@@ -6,8 +6,16 @@ function scrollFunction() {
         });
 
     }
-
     function scrollFunction2() {
+        let happeningWrapper = document.getElementById("happeningWrapper");
+        happeningWrapper.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+    
+        }
+
+    function scrollFunction3() {
         let menuWrapper = document.getElementById("menuWrapper");
         menuWrapper.scrollIntoView({
                 behavior: "smooth",
@@ -15,8 +23,8 @@ function scrollFunction() {
             });
     
         }
-
-       function scrollFunction3() {
+    
+       function scrollFunction4() {
         let headerImageWrapper = document.getElementById("headerImageWrapper");
         headerImageWrapper.scrollIntoView({
                 behavior: "smooth",
