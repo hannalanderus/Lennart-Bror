@@ -15,4 +15,13 @@ function scrollFunction() {
             });
     
         }
+
+       function scrollFunction3() {
+        let headerImageWrapper = document.getElementById("headerImageWrapper");
+        headerImageWrapper.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+    
+        }
       
