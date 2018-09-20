@@ -107,7 +107,7 @@ h1 {
   position: relative;
 }
 #arrowWrapper {
-  margin-top: 100px;
+  margin-top: 200px;
   border: solid #162836;
 }
 #arrowImage2 {
@@ -117,6 +117,7 @@ h1 {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+  border: solid #162836;
 }
 #happeningWrapper h2 {
   padding-bottom: 38px;
