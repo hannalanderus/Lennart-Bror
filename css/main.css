@@ -6,7 +6,6 @@ html {
 }
 @media screen and (min-width: 64em) {
 	#arrowStyling{
-	border:solid green;
 	display:block;
 	}
 	#arrowImage{
