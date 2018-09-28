@@ -4,6 +4,33 @@ html {
   height: 100%;
   font-family: 'Roboto', sans-serif;
 }
+@media screen and (min-width: 64em) {
+	#arrowStyling{
+	display:block;
+	}
+	#arrowImage{
+	#arrowStyling  > .arrowImageStyling();
+	margin-bottom: -30px;
+	display: block;
+}
+	#arrowImageAbout{
+	display:block;
+	#arrowStyling  > .arrowImageStyling();
+}
+	#arrowWrapper{
+	display:block;
+	margin-top:250px;
+	border: solid @blue;
+}
+
+	#arrowImage2{
+	display:block;
+	#arrowStyling  > .arrowImageStyling();
+	border: solid @blue;
+}
+	
+}
+
 #headerImageWrapper {
   position: relative;
   height: 100vh;
@@ -55,6 +82,7 @@ html {
   display: none;
 }
 #arrowImage {
+  display:none;
   width: 70px;
   height: 70px;
   position: absolute;
@@ -91,6 +119,7 @@ h1 {
   padding-right: 20px;
 }
 #arrowImageAbout {
+  display:none;
   width: 70px;
   height: 70px;
   position: absolute;
@@ -107,10 +136,12 @@ h1 {
   position: relative;
 }
 #arrowWrapper {
+  display:none;
   margin-top: 250px;
   border: solid #162836;
 }
 #arrowImage2 {
+  display:none;
   width: 70px;
   height: 70px;
   position: absolute;
@@ -328,6 +359,7 @@ h6 {
   color: black;
 }
 #topArrowWrapper {
+  display:none;
   display: flex;
   justify-content: center;
 }
