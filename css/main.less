@@ -390,6 +390,10 @@ color: black;
 display: flex;
 justify-content: center;
 }
+#extraText{
+	display: none;
+}
+
 
 @media screen and (min-width: 711px) {
 #aboutLB{
@@ -408,30 +412,50 @@ justify-content: center;
 		background-color: #ddd;
 		color: black;
 	  }*/
-	  
-
 }
 
 @media screen and (min-width: 1025px) {
-	  	#arrowStyling{
+
+/********* display extra text in desktop ***********/
+#extraText{
+	display: block;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 80px;
+}
+#extraText h2{
+	#title  > .titlestyling();
+}
+#extraText #aboutText{
+	width: 80%;
+	padding-bottom: 40px;
+	
+}	
+#aboutLB{
+	height: 100%;	
+}	
+/*************/	
+
+#arrowStyling{
 	display:block;
 	}
-	#arrowImage{
+#arrowImage{
 	#arrowStyling  > .arrowImageStyling();
 	margin-bottom: -30px;
 	display: block;
 }
-	#arrowImageAbout{
+#arrowImageAbout{
 	display:block;
 	#arrowStyling  > .arrowImageStyling();
 }
-	#arrowWrapper{
+#arrowWrapper{
 	display:block;
 	margin-top:250px;
 	border: solid @blue;
 }
 
-	#arrowImage2{
+#arrowImage2{
 	display:block;
 	#arrowStyling  > .arrowImageStyling();
 	border: solid @blue;
@@ -441,7 +465,6 @@ justify-content: center;
 	margin-top: 40px;
 }
 #leftWrapper{
-	/*border: solid red;*/
 	margin-top: 40px;
 	display: flex;
 	flex-direction: row;
