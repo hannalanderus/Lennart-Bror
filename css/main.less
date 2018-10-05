@@ -6,36 +6,6 @@
 @black: #000000;
 @Padding40: 40px;
 
-@media screen and (min-width: 35.5em) {}
-              
-@media screen and (min-width: 64em) {
-	#arrowStyling{
-	display:block;
-	}
-	#arrowImage{
-	#arrowStyling  > .arrowImageStyling();
-	margin-bottom: -30px;
-	display: block;
-}
-	#arrowImageAbout{
-	display:block;
-	#arrowStyling  > .arrowImageStyling();
-}
-	#arrowWrapper{
-	display:block;
-	margin-top:250px;
-	border: solid @blue;
-}
-
-	#arrowImage2{
-	display:block;
-	#arrowStyling  > .arrowImageStyling();
-	border: solid @blue;
-}
-	
-}
-
-
 
 #boxshadow{
 	.shadow () {
@@ -434,15 +404,68 @@ justify-content: center;
 		font-size: 0.8em;
 		font-weight: 700;
 	  }
-	.topnav a:hover {
+	/*.topnav a:hover {
 		background-color: #ddd;
 		color: black;
-	  }
+	  }*/
 	  
 
 }
 
-@media screen and (min-width: 900px) {}
+@media screen and (min-width: 1025px) {
+	  	#arrowStyling{
+	display:block;
+	}
+	#arrowImage{
+	#arrowStyling  > .arrowImageStyling();
+	margin-bottom: -30px;
+	display: block;
+}
+	#arrowImageAbout{
+	display:block;
+	#arrowStyling  > .arrowImageStyling();
+}
+	#arrowWrapper{
+	display:block;
+	margin-top:250px;
+	border: solid @blue;
+}
+
+	#arrowImage2{
+	display:block;
+	#arrowStyling  > .arrowImageStyling();
+	border: solid @blue;
+}
+
+#leftWrapper{
+	/*border: solid red;*/
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding-bottom: 20px;
+	
+}
+#text2{
+	width: 22%;
+	padding-right: 10px;
+	margin-right: 20px;
+}
+#text1{
+	width: 20%;
+	padding-left: 40px;
+}
+
+#rightWrapper{
+	width: 50%;
+	margin-top:0px;
+	margin-right: -10px;
+	margin-bottom: -20px;
+	/*border:solid yellow;*/
+	
+}
+
+
+}
 
 
 /*
