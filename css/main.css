@@ -407,8 +407,12 @@ h6 {
     transform: translateX(-50%) translateY(-50%);
     border: solid #162836;
   }
+  #orderWrapper {
+    margin-top: 40px;
+  }
   #leftWrapper {
     /*border: solid red;*/
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
