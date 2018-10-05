@@ -130,7 +130,8 @@ h1 {
 /**** happening at L&B part****/
 #happeningWrapper {
   background-color: #162836;
-  height: 100vh;
+  height:100%;
+  /*height: 100vh;*/
   /*height: calc(55vh - 10px);*/
   color: #FFFFFF;
   position: relative;
