@@ -33,10 +33,6 @@ function scrollFunction() {
     
         }
 /*********    Change Menu Image      ************/ 
-    var imgs = ["images/LB_Snacks.jpg",
-            "images/LB_mat.jpg",
-            "images/LB_dryck.jpg"];
- 
     function changeMenuFunction(dir) {
         var img = document.getElementById("menuCardimg");
         img.src = imgs[imgs.indexOf(img.src) + (dir || 1)] || imgs[dir ? imgs.length - 1 : 0];
@@ -51,9 +47,9 @@ function scrollFunction() {
         }
     }*/
  
-   var imgs = ["images/LB_Snacks.jpg",
-            "images/LB_mat.jpg",
-            "images/LB_dryck.jpg"];
+       var imgs = ["images/LB_Snacks_fix.jpg",
+            "images/LB_mat_fix.jpg",
+            "images/LB_dryck_fix.jpg"];
     function changeMenuFunction() {
         document.getElementById("menuCardimg").src = imgs[0];
         imgs.push(imgs.shift())
