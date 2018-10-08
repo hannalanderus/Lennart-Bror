@@ -198,8 +198,20 @@ h4 {
   width: 500px;
   padding-bottom: 26px;
 }
+#pureWrapperCenterImage {
+  display: flex;
+  justify-content: center;
+  /*border: solid red;*/
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
 #menuCardimg {
-  height: auto;
+  position: absolute;
+  height: 500px;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 /*#foodimg{
     width: 500px;
