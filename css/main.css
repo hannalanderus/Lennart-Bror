@@ -202,6 +202,7 @@ h4 {
 /* owl carousl*/
 .pureWrapperCenterImage {
   display: flex;
+  padding-top: 20px;
   width: 100%;
   justify-content: center;
   height: auto;
