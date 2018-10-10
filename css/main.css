@@ -222,26 +222,36 @@ h4 {
   width: 90%;
   transform: translateX(-50%) translateY(-50%);
 }
-/*****/
-#changeImageArrow {
-  transform: rotate(90deg);
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 50%;
-  right: 5px;
-}
-/*#foodimg{
-    width: 500px;
-    height: 250px;
-}*/
 #menuButton {
   margin-top: 50px;
   width: 200px;
   background-color: #FFFFFF;
+  color: #000000;
   border: solid 1px #000000;
+  border-radius: 0;
   padding: 7px 10px 7px 10px;
 }
+.modal-body p {
+  margin-bottom: -10px;
+}
+.modal-body span {
+  display: inline-block;
+  float: right;
+  padding-right: 150px;
+  font-weight: bold;
+}
+/*****/
+/*	transform:rotate(90deg);
+	width: 30px;
+	height: 30px;
+	position: absolute;
+    top: 50%;
+    right: 5px;
+}*/
+/*#foodimg{
+    width: 500px;
+    height: 250px;
+}*/
 /*** order food part***/
 #orderWrapper {
   display: flex;

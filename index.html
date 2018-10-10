@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LENNART & BROR</title>
-    
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/pure.css">
     <link rel="stylesheet" href="css/grids-responsive.css">
+<!-- bootstrap menyknapp-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
  <header>
@@ -123,7 +125,54 @@
    </div>      
 </div>
 <div class="pure-u-1" id="pureWrapperCenter">
-      <button id="menuButton">LÄS HÄR</button>
+      
+      <button id="menuButton" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">LÄS HÄR</button>
+ 
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+   
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">LENNART & BRORS MENY</h4>
+        </div>
+        <div class="modal-body">
+          <h5>SNACKS OCH CHARK</h5>
+          <p>Ost och charkbricka<span>290 :-</span></p>
+          <p>Liten charktallrik <span>145 :-</span></p>
+          <p>Pata Negra <span>185 :-</span></p>
+          <p>Cecina de leon <span>130 :-</span></p>
+          <p>Fänkålssalami <span>85:-</span></p>
+          <p>pimientos de padron <span>55:-</span></p>
+          <p>Oliver<span>35 :-</span></p>
+          <p>Mandlar<span>35 :-</span></p>
+          <p>Ölkorv<span>35 :-</span></p>
+
+          <p><span></span></p>
+          <hr>
+          <h5>SIDES</h5>
+          <p>Pommes<span>25 :-</span></p>
+          <p>Bacon<span>10 :-</span></p>
+          <p>Saltgurka<span>10 :-</span></p>
+          <p>Dip<span>10 :-</span></p>
+          <hr>
+          <h5>MAT</h5>
+          <p>L&B korv<span>120 :-</span></p>
+          <p>Reuben sandwich <span>140 :-</span></p>
+          <p>Brors burgare <span>120 :-</span></p>
+          <p>Dubbelburgare <span>140 :-</span></p>
+          <p>Lilla Cheese <span>100 :-</span></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">STÄNG</button>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+ 
 </div>
 
 <!---------  Menu part end   -------->
