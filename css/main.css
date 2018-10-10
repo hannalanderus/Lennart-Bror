@@ -302,6 +302,7 @@ h5 {
 /******* image part****/
 /****** FOOTER ********/
 #footerWrapper {
+  padding-top: 40px;
   background-color: #162836;
   height: auto;
   color: #FFFFFF;
