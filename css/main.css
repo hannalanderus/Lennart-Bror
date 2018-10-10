@@ -199,23 +199,29 @@ h4 {
   width: 100%;
   padding-bottom: 26px;
 }
-#pureWrapperCenterImage {
+/* owl carousl*/
+.pureWrapperCenterImage {
   display: flex;
+  width: 100%;
   justify-content: center;
-  /*border: solid red;*/
-  height: 500px;
+  height: auto;
   position: relative;
   overflow: hidden;
   background-color: transparent;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.item {
+  height: 500px;
 }
 #menuCardimg {
   position: absolute;
   height: 500px;
   left: 50%;
   top: 50%;
+  width: 90%;
   transform: translateX(-50%) translateY(-50%);
 }
+/*****/
 #changeImageArrow {
   transform: rotate(90deg);
   width: 30px;
