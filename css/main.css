@@ -231,12 +231,17 @@ h4 {
 }
 #menuButton {
   margin-top: 50px;
-  width: 200px;
+  width: 170px;
   background-color: #FFFFFF;
   color: #000000;
   border: solid 1px #000000;
   border-radius: 0;
   padding: 7px 10px 7px 10px;
+}
+.modal-title,
+#closeButton {
+  color: #162836;
+  font-weight: bold;
 }
 .modal-body p {
   margin-bottom: -10px;
@@ -269,17 +274,12 @@ h4 {
 #orderWrapper {
   display: flex;
   height: 300px;
+  margin-top: 100px;
   justify-content: space-around;
   flex-direction: row-reverse;
 }
-#drawingimg {
-  padding: 20px;
-}
 h5 {
   letter-spacing: 0.2em;
-}
-#innerOrderWrapper {
-  padding: 20px;
 }
 #rightWrapper h5 {
   margin-top: 0px;
@@ -290,6 +290,7 @@ h5 {
   margin-top: 0px;
 }
 #callButton {
+  font-size: 0.8em;
   background-color: #FFFFFF;
   border: solid 1px #000000;
   padding: 7px 10px 7px 10px;
