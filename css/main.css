@@ -223,7 +223,7 @@ h4 {
 }
 #menuCardimg {
   position: absolute;
-  height: 450px;
+  height: 420px;
   left: 50%;
   top: 50%;
   width: 90%;
@@ -237,6 +237,7 @@ h4 {
   border: solid 1px #000000;
   border-radius: 0;
   padding: 7px 10px 7px 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .modal-title,
 #closeButton {
@@ -255,7 +256,6 @@ h4 {
 .modal-body span {
   display: inline-block;
   float: right;
-  border: 1px solid black;
   padding-right: 20px;
   font-weight: bold;
 }
